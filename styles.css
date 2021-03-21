@@ -1,0 +1,136 @@
+body {
+  background-color: #ffe7a6;
+}
+
+#nav {
+	background-color: brown;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 23px;
+  padding-bottom: 2vh;
+  padding-left: 1vw;
+  padding-top: 1vh;
+}
+
+#nav a {
+  font-family: 'Bungee Inline', cursive;
+	color: white;
+  font-size: 25px;
+  padding-right: 2vw;
+  postition: relative;
+  top: 12vh;
+  text-decoration: none;
+}
+
+
+h1 {
+  font-family: 'Bungee Shade', cursive;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 10vh;
+}
+
+h3 {
+  font-family: 'Bungee Shade', cursive;
+	text-align: center;
+  font-size: 30px;
+  margin-bottom: 2vh;
+}
+
+h4 {
+  font-family: 'Bungee Inline', cursive;
+  text-align: center;
+  font-size 80px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 600px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+li {
+  font-family: Georgia;
+}
+
+ul, ol{
+  padding-top: 5vh;
+}
+
+ul ul {
+  list-style-type: circle;
+}
+
+.highlight {
+  background-color: #a8e9ff;
+}
+
+#ingredients,
+#equipment,
+#directions {
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+  width: 30%;
+  height: 15vh;
+  margin: 1%;
+  border: 4px solid brown;
+  background-color: white;
+  padding: 20px;
+  padding-bottom: 3vw;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+#ingredients li span {
+  font-style: italic;
+  color: #999;
+}
+
+#equipment li:nth-child(2) {
+  color: red;
+}
+
+#directions li:nth-child(4) {
+  color: red;
+}
+
+#original{
+  text-align: center;
+}
+
+@media (orientation:portrait) {
+  #ingredients,
+  #equipment,
+  #directions {
+    width: 100%;
+    height: auto;
+  }
+  img {
+    height: 80%;
+    width: 80%;
+  }
+}
+
+/* CSS for the change click event */
+#title.clicked { 
+  color: red; 
+}
+
+div#ingredients.ingredientsClicked {
+  height: auto;
+}
+
+div#equipment.equipmentClicked {
+  height: auto;
+}
+
+div#directions.directionsClicked {
+  height: auto;
+}
